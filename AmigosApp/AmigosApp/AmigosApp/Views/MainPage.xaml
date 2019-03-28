@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:local="clr-namespace:AmigosApp"
+             xmlns:behaviorsPack="clr-namespace:Xamarin.Forms.BehaviorsPack;assembly=Xamarin.Forms.BehaviorsPack"
+             x:Class="AmigosApp.MainPage"
+             Title="{Binding Title}">
+    <Grid>
+        <StackLayout>
+            <autocomplete:SfAutoComplete 
+                HeightRequest="40"
+                DataSource="{Binding Characters}"
+                DisplayMemberPath="name"
+                Watermark="Busca tu amigo....">
+
+                <autocomplete:SfAutoComplete.Behaviors>
+                    <behaviorsPack:EventToCommandBehavior 
+                                EventName="SelectionChanged"
+                                Command="{Binding SearchCommand}"
+                                EventArgsPropertyPath="Value">
+
+                    </behaviorsPack:EventToCommandBehavior>
+                </autocomplete:SfAutoComplete.Behaviors>
+
+            </autocomplete:SfAutoComplete>
+
+            <ListView ItemsSource="{Binding amigos}"
+                  RowHeight="200">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell Appearing="ViewCell_Appearing">
+                            <Frame CornerRadius="5"
+                               Margin="5"
+                               BackgroundColor="White">
+                                <StackLayout>
+                                    <Image Source="{Binding image}"
+                                               HeightRequest="50"></Image>
+                                    <Label Text="{Binding name}"
+                                               FontSize="Large"></Label>
+                                    <Label Text="{Binding amiiboSeries, StringFormat='Amiibo Series: {0}'}"></Label>
+                                    <Label Text="{Binding gameSeries, StringFormat='Games Series: {0}'}"></Label>
+                                    <Label Text="{Binding type, StringFormat='Type: {0}'}"></Label>
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+        <Grid BackgroundColor="Black"
+              Opacity=".8"
+              IsVisible="{Binding IsBusy}">
+            <ActivityIndicator
+                           IsRunning="{Binding IsBusy}"
+                           HorizontalOptions="Center"/>
+        </Grid>
+    </Grid>
+
+</ContentPage>

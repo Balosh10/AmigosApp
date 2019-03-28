@@ -1,0 +1,14 @@
+C:\apps\AmigosApp\AmigosApp\AmigosApp\bin\Debug\netstandard2.0\AmigosApp.deps.json
+C:\apps\AmigosApp\AmigosApp\AmigosApp\bin\Debug\netstandard2.0\AmigosApp.dll
+C:\apps\AmigosApp\AmigosApp\AmigosApp\bin\Debug\netstandard2.0\AmigosApp.pdb
+C:\apps\AmigosApp\AmigosApp\AmigosApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\apps\AmigosApp\AmigosApp\AmigosApp\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\apps\AmigosApp\AmigosApp\AmigosApp\obj\Debug\netstandard2.0\AmigosApp.csproj.CoreCompileInputs.cache
+C:\apps\AmigosApp\AmigosApp\AmigosApp\obj\Debug\netstandard2.0\AmigosApp.AssemblyMetadataInputs.cache
+C:\apps\AmigosApp\AmigosApp\AmigosApp\obj\Debug\netstandard2.0\AmigosApp.AssemblyMetadata.cs
+C:\apps\AmigosApp\AmigosApp\AmigosApp\obj\Debug\netstandard2.0\AmigosApp.AssemblyInfoInputs.cache
+C:\apps\AmigosApp\AmigosApp\AmigosApp\obj\Debug\netstandard2.0\AmigosApp.AssemblyInfo.cs
+C:\apps\AmigosApp\AmigosApp\AmigosApp\obj\Debug\netstandard2.0\AmigosApp.dll
+C:\apps\AmigosApp\AmigosApp\AmigosApp\obj\Debug\netstandard2.0\AmigosApp.pdb
+C:\apps\AmigosApp\AmigosApp\AmigosApp\obj\Debug\netstandard2.0\AmigosApp.csprojAssemblyReference.cache
+C:\apps\AmigosApp\AmigosApp\AmigosApp\obj\Debug\netstandard2.0\XamlC.stamp
